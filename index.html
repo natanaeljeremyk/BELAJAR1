@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mochisuki Finance Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mochisuki Finance Calculator</h1>
+
+    <div class="calculator">
+      <div class="input-group">
+        <label for="debt">Total Utang</label>
+        <input type="number" id="debt" placeholder="Masukkan total utang">
+      </div>
+      <div class="input-group">
+        <label for="equity">Total Ekuitas</label>
+        <input type="number" id="equity" placeholder="Masukkan total ekuitas">
+      </div>
+      <div class="input-group">
+        <label for="net-income">Laba Bersih</label>
+        <input type="number" id="net-income" placeholder="Masukkan laba bersih">
+      </div>
+      <div class="input-group">
+        <label for="shares">Jumlah Saham</label>
+        <input type="number" id="shares" placeholder="Masukkan jumlah saham">
+      </div>
+      <button onclick="calculateDER()">Hitung DER</button>
+      <button onclick="calculateEPS()">Hitung EPS</button>
+    </div>
+
+    <div id="result-container">
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
